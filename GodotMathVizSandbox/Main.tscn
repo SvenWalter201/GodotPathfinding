@@ -1,11 +1,15 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://bin/gdexample.gdns" type="Script" id=2]
+[ext_resource path="res://Main.gd" type="Script" id=3]
 
 [node name="Main" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
+
+[connection signal="position_changed" from="Sprite" to="." method="_on_Sprite_position_changed"]
