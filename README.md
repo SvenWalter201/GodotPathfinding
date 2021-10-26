@@ -1,2 +1,6 @@
-# GodotMathViz
-A simple Visualization Tool for mathematical surfaces. 
+# GodotPathfinding
+
+A simple Pathfinding Library Plugin using GDNative for the Godot Game Engine.
+
+Currently implemented algorithms:
+- A*
